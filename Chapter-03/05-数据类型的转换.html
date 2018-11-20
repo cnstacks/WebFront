@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script type="text/javascript">
+    //1、将number类型转换为string类型
+    var n1 = 123;
+    var n2 = '123';
+    console.log(typeof n1);
+    console.log(typeof n2);
+    console.log(n1 + n2);
+    console.log("n1+n2:", typeof (n1 + n2));
+    //2、强制转换String()或者toString()
+    var str1 = String(n1);
+    console.log(typeof str1);
+
+    var num = 1234;
+    console.log(num.toString());
+
+    //3、将string转换为number
+    var strNum2 = '19939';
+    var num2 = Number(strNum2);
+    console.log(typeof num2);
+    console.log(num2);
+
+    //4、一种特殊情况:NaN,Not a Number
+    var strNum1 = '19930911.0911cxz';
+    var num1 = Number(strNum1);
+    console.log(typeof num1);
+    console.log(num1);//NaN:Not a number
+
+    //parseInt(),parseFloat(),解析字符串，返回整数和小数；
+    console.log(parseInt(strNum1));//19930911
+    console.log(parseFloat(strNum1));//19930911.0911
+
+</script>
+</body>
+</html>
